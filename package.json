@@ -1,0 +1,24 @@
+{
+  "name": "project-management-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MHtazaroie753/express-nodejs-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MHtazaroie753/express-nodejs-course/issues"
+  },
+  "homepage": "https://github.com/MHtazaroie753/express-nodejs-course#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.2.4"
+  }
+}
