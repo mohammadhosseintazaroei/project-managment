@@ -14,4 +14,4 @@ const ProjectSchema = new mongoose.Schema({
 const ProjectModel = mongoose.model("team", ProjectSchema);
 module.exports = {
     ProjectModel
-}
+};
