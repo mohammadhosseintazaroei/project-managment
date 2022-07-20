@@ -39,6 +39,13 @@ class UserController {
             error(next)
         }
     }
+    async uploadProfileImage(req,res,next) {
+        try {
+            console.log(req.file);
+        } catch (error) {
+            next(error)
+        }
+    }
     addSkiils() {
 
     }
