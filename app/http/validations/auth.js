@@ -29,6 +29,7 @@ function registerValidator() {
             if (value !== ctx?.req?.body?.confirm_password) throw "رمز عبور با تکرار آن یکسان نمیباشد"
             return true
         })
+        
     ]
 } ;
 
