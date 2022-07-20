@@ -15,7 +15,7 @@ function compareDataWithHash(data, hashedString) {
 function createUploadPath() {
     let d = new Date()
     const Year = "" + d.getFullYear();
-    const Month =   d.getMonth() + "";
+    const Month = d.getMonth() + "";
     const Day = "" + d.getDate();
     const uploadPath = path.join(__dirname, "..", "..", "public", "upload", Year, Month, Day)
     fs.mkdirSync(uploadPath, { recursive: true });
@@ -33,5 +33,5 @@ function verifyJwtToken(token) {
     return result;
 }
 module.exports = {
-    hashString, compareDataWithHash, tokenGenerator, verifyJwtToken,createUploadPath
+    hashString, compareDataWithHash, tokenGenerator, verifyJwtToken, createUploadPath
 };
