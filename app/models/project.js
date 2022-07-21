@@ -7,11 +7,12 @@ const ProjectSchema = new mongoose.Schema({
     owner: { type: mongoose.Types.ObjectId, required: true, },
     team: { type: mongoose.Types.ObjectId },
     Private: { type: Boolean, default: true, },
+    tags: { type: [String], default: [] }
 
 }, {
     timestamps: true
 });
-const ProjectModel = mongoose.model("team", ProjectSchema);
+const ProjectModel = mongoose.model("project", ProjectSchema);
 module.exports = {
     ProjectModel
 };

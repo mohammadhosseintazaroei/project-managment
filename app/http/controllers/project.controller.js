@@ -3,7 +3,8 @@ const { ProjectModel } = require("../../models/project");
 class ProjectController {
     async createProject(req, res, next) {
         try {
-            const { title, text, image } = req.body;
+            const { title, text, image,tags } = req.body;
+            console.log(tags);
             const owner = req.user._id;
             const image_path = image.substring(7);
             const result = await ProjectModel.create({ title, text, owner, image: image_path });
