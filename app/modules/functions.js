@@ -32,6 +32,10 @@ function verifyJwtToken(token) {
     if (!result?.username) throw { status: 401, message: "لطفا وارد حساب کاربری خود شوید " };
     return result;
 }
+
+function createLinkForFiles(fileAdress, req) {
+    return req.protocol + "://" + req.get("host") + "/" + (fileAdress.replace(/[\\\\]/gm, "/"));
+}
 module.exports = {
-    hashString, compareDataWithHash, tokenGenerator, verifyJwtToken, createUploadPath
+    hashString, compareDataWithHash, tokenGenerator, verifyJwtToken, createUploadPath, createLinkForFiles
 };
